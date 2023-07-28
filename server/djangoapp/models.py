@@ -38,7 +38,7 @@ class CarModel(models.Model):
     )
 
     car_type = models.CharField(max_length=20, choices=CAR_TYPES) 
-    year = models.DateField()
+    year = models.IntegerField()
 
     def __str__(self):
         return f"{self.car_make} - {self.name}"
